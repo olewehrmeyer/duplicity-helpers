@@ -5,12 +5,12 @@ set -e
 # The folder to go to to run the local backup script. Example here for Paperless NGX
 SOFTWARE_FOLDER="/opt/paperless"
 
-B2_ACCOUNT="<set your B2 account here>"
+B2_KEY_ID="<set your B2 key id here>"
 B2_ACCESSKEY="<set your B2 access key here>"
 B2_BUCKET="<set your B2 bucket name here>"
 B2_KEY="<set your B2 folder here>"
 
-B2_URL=b2://${B2_ACCOUNT}:${B2_ACCESSKEY}@${B2_BUCKET}/${B2_KEY}
+B2_URL=b2://${B2_KEY_ID}:${B2_ACCESSKEY}@${B2_BUCKET}/${B2_KEY}
 
 # this assumes your GPG key has no passphrase
 export SIGN_PASSPHRASE=""
