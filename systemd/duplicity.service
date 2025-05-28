@@ -1,0 +1,8 @@
+[Unit]
+Description=Duplicity backup
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+ExecStart=/opt/backup/backup.sh
